@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "223896605016",
+    "firebase_url": "https://peditaxiv1db.firebaseio.com",
+    "project_id": "peditaxiv1db",
+    "storage_bucket": "peditaxiv1db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223896605016:android:45a2081d1f585b37",
+        "android_client_info": {
+          "package_name": "com.grupo_ciencia.peditaxiv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223896605016-mhc565jtf7acov03uv5fdim9nbegorpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCkEJ5LOdK648IvzsLiLO8u6hSc-BPz5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
