@@ -5,6 +5,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,15 +33,17 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     private DatabaseReference mChildReference = mRootReference.child("taxis");
 
     private ImageView photoImageView;
-    private TextView nameTextView;
-    private TextView emailTextView;
-    private TextView idTextView;
+    private TextView nameTextView, emailTextView, idTextView;
+
+    private EditText editBrand, editColor, editPlate, editName, editSurname, editCi;
+    private Button btnSubmit;
 
     private GoogleApiClient googleApiClient;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener firebaseAuthListener;
 
+    Taxi taxi = new Taxi();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +53,21 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         emailTextView = (TextView) findViewById(R.id.emailTextView);
         idTextView = (TextView) findViewById(R.id.idTextView);
+
+        editBrand = (EditText) findViewById(R.id.edit_brand);
+        editColor = (EditText) findViewById(R.id.edit_color);
+        editPlate = (EditText) findViewById(R.id.edit_plate);
+        editName = (EditText) findViewById(R.id.edit_name);
+        editSurname = (EditText) findViewById(R.id.edit_surname);
+        editCi = (EditText) findViewById(R.id.edit_ci);
+        btnSubmit = (Button) findViewById(R.id.btn_submit);
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                submitTaxi();
+            }
+        });
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -80,8 +99,13 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 //        mChildReference.addValueEventListener(new ValueEventListener() {
 //            @Override
 //            public void onDataChange(DataSnapshot dataSnapshot) {
-//                String message = dataSnapshot.getValue(String.class);
-//                txtMsg.setText(message);
+//                if(dataSnapshot.getValue(String.class)!=null){
+//                    String key = dataSnapshot.getKey();
+//                    if (key.equals("taxis")){
+//                        String taxis = dataSnapshot.getValue(String.class);
+//                    }
+//                }
+//
 //            }
 //
 //            @Override
@@ -150,5 +174,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         startActivity(intent);
     }
 
+    private void submitTaxi() {
+        taxi.setBrand(editBrand.getText().toString());
+        taxi.setColor(editColor.getText().toString());
+        taxi.setPlate(editPlate.getText().toString());
+        taxi.setName(editName.getText().toString());
+        taxi.setSurname(editSurname.getText().toString());
+        taxi.setCi(editCi.getText().toString());
+        mChildReference.push().setValue(taxi);
+    }
 
 }
