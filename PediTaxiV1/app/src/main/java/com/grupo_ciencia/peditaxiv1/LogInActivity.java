@@ -103,6 +103,15 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
         }
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        if (firebaseAuthListener != null) {
+            firebaseAuth.removeAuthStateListener(firebaseAuthListener);
+        }
+    }
+
     private void handleSignInResult(GoogleSignInResult result) {
         if (result.isSuccess()) {
             firebaseAuthWithGoogle(result.getSignInAccount());
@@ -137,12 +146,4 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
         startActivity(intent);
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-
-        if (firebaseAuthListener != null) {
-            firebaseAuth.removeAuthStateListener(firebaseAuthListener);
-        }
-    }
 }
