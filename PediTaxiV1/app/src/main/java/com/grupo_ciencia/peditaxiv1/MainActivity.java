@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference mRootReference = firebaseDatabase.getReference();
-    private DatabaseReference mChildReference = mRootReference.child("taxis");
+    private DatabaseReference mChildReference = mRootReference.child("mensaje");
 
     private ImageView photoImageView;
     private TextView nameTextView;
