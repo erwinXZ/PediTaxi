@@ -182,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         taxi.setSurname(editSurname.getText().toString());
         taxi.setCi(editCi.getText().toString());
         mChildReference.push().setValue(taxi);
+        Toast.makeText(getApplicationContext(), "Datos insertados correctamente", Toast.LENGTH_LONG).show();
     }
 
 }
