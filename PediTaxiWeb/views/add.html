@@ -1,0 +1,60 @@
+<h1>Añadir Taxi</h1>
+
+<form class="form-horizontal" role="form">
+
+  <div class="form-group">
+    <label for="marca" class="col-sm-2 control-label">Marca:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="marca"
+             ng-model="value.brand" placeholder="Marca"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="color" class="col-sm-2 control-label">Color:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="color"
+             ng-model="value.color" placeholder="Color"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="placa" class="col-sm-2 control-label">Placa:</label>
+    <div class="col-sm-4">
+        <input class="form-control" id="placa"
+               ng-model="value.plate" placeholder="Placa"/>
+      </div>
+  </div>
+
+  <div class="form-group">
+    <label for="nombres" class="col-sm-2 control-label">Nombre(s):</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="nombres"
+             ng-model="value.name" placeholder="Nombre(s)"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="apellidos" class="col-sm-2 control-label">Apellido(s):</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="apellidos"
+             ng-model="value.surname" placeholder="Apellido(s)"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="ci" class="col-sm-2 control-label">CI:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="ci"
+             ng-model="value.ci" placeholder="CI"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <a ng-click="addTaxi()" class="btn btn-small btn-primary">Añadir</a><a href="#/" class="btn btn-small btn-danger">Cancelar</a>
+    </div>
+  </div>
+  
+</form>
+</div>

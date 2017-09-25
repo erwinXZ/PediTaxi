@@ -1,0 +1,34 @@
+<table class="table" >
+  <caption class="lead">Taxis</caption>
+  <thead>
+    <tr>
+      <th>Marca</th>
+      <th>Color</th>
+      <th>Placa</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>CI</th>
+      <th>Latitud</th>
+      <th>Longitud</th>
+	    <th> Acciones </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="value in values">
+      <td>{{value.brand}}</td>
+      <td>{{value.color}}</td>
+      <td>{{value.plate}}</td>
+      <td>{{value.name}}</td>
+      <td>{{value.surname}}</td>
+      <td>{{value.ci}}</td>
+      <td>{{value.latitude}}</td>
+      <td>{{value.longitude}}</td>
+	    <td><a href="#/edit/{{value.$id}}" class="btn btn-small btn-primary">Editar</a> <a class="btn btn-small btn-danger" ng-click="removeTaxi(value.$id)">Eliminar</a></td>
+	  
+    </tr>
+  </tbody>
+</table>
+<p>
+    <a href="#/add" class="btn btn-success" role="button">Añadir nuevo taxi</a>
+</p>
+
