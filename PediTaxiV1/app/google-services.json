@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "223896605016-1g0b4k7bkhicqm82kr0pmr30kmsjh6bj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grupo_ciencia.peditaxiv1",
+            "certificate_hash": "2754c6e2ae911139de6cab3ff6945a46530f5e83"
+          }
+        },
+        {
+          "client_id": "223896605016-ahuc70rra9dbnifth62us032at2k8eqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grupo_ciencia.peditaxiv1",
+            "certificate_hash": "17537b592b38dc63b2e06fba0d6420f47537ad79"
+          }
+        },
+        {
           "client_id": "223896605016-mhc565jtf7acov03uv5fdim9nbegorpv.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +45,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223896605016-mhc565jtf7acov03uv5fdim9nbegorpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
@@ -46,6 +67,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "223896605016-oqhba6cqp3lqn0sl7dvc080c4pqnvalu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grupo_ciencia.peditaxichoferv1",
+            "certificate_hash": "2754c6e2ae911139de6cab3ff6945a46530f5e83"
+          }
+        },
+        {
+          "client_id": "223896605016-ehbc0vg8vobtek5nleddn4vopm7qpv45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grupo_ciencia.peditaxichoferv1",
+            "certificate_hash": "17537b592b38dc63b2e06fba0d6420f47537ad79"
+          }
+        },
+        {
           "client_id": "223896605016-mhc565jtf7acov03uv5fdim9nbegorpv.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -60,8 +97,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223896605016-mhc565jtf7acov03uv5fdim9nbegorpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
