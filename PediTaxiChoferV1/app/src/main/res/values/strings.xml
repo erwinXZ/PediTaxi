@@ -7,4 +7,10 @@
     <string name="not_revoke">No se pudo revocar el acceso</string>
     <string name="not_firebase_auth">No se pudo autenticar con Firebase</string>
     <string name="insert">Insertar Datos</string>
+    <string name="brand">Marca</string>
+    <string name="color">Color</string>
+    <string name="placa">Placa</string>
+    <string name="Nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="ci">Ci</string>
 </resources>

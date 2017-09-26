@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/edev/proyectos/PediTaxi/PediTaxiChoferV1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="7d84b351728f4339fdc69aec356ea115b70331e0">
-        <dex dex="/home/edev/proyectos/PediTaxi/PediTaxiChoferV1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b83859eb0ed09fb5bbc3d0ea4e2d40ca717ef25a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/edev/proyectos/PediTaxi/PediTaxiChoferV1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/benji/AndroidStudioProjects/PediTaxi/PediTaxiChoferV1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/edev/proyectos/PediTaxi/PediTaxiChoferV1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_05421d8dcfaa58829dfc45a401dd1bd9592aea6d/classes.dex" />
+        <dex dex="/home/benji/AndroidStudioProjects/PediTaxi/PediTaxiChoferV1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e7f3e434f4380abdbdac0972b540eb2b017fd70d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/benji/AndroidStudioProjects/PediTaxi/PediTaxiChoferV1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dbca3dee371612dd3211d06eb1393777b2b54fb4">
+        <dex dex="/home/benji/AndroidStudioProjects/PediTaxi/PediTaxiChoferV1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3a3e496b4889ab2e962b8dcf2739b2d6888d49a0/classes.dex" />
     </item>
 
 </items>

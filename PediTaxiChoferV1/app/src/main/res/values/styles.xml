@@ -7,5 +7,22 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="RaiseButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="RaiseButtonPrimary" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccentButton</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="editTextWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
 </resources>
