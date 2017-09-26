@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">PediTaxiV1</string>
-    <string name="not_log_in">No se pudo iniciar sesión</string>
-    <string name="log_out">Cerrar sesión</string>
-    <string name="revoke">Revocar</string>
-    <string name="not_close_session">No se pudo cerrar sesión</string>
-    <string name="not_revoke">No se pudo revocar el acceso</string>
-    <string name="not_firebase_auth">No se pudo autenticar con Firebase</string>
-</resources>
