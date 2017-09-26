@@ -15,7 +15,9 @@ app.controller('AddController', ['$scope', '$firebaseArray', '$location', functi
             plate: $scope.value.plate,
             name: $scope.value.name,
             surname: $scope.value.surname,
-            ci: $scope.value.ci
+			latitude: $scope.value.latitude,
+			longitude: $scope.value.longitude,
+			ci: $scope.value.ci
 		});
 		$location.path('/');
 	}

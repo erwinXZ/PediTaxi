@@ -16,6 +16,8 @@ app.controller('EditController', ['$scope','$location', '$routeParams', '$fireba
             plate: $scope.value.plate,
             name: $scope.value.name,
             surname: $scope.value.surname,
+            latitude: $scope.value.latitude,
+            longitude: $scope.value.longitude,
             ci: $scope.value.ci
         });
         $scope.edit_form.$setPristine();
